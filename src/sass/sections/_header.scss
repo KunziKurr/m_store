@@ -1,0 +1,131 @@
+.header {
+    height: 75vh;
+    width: 100vw;
+    background-color: $color-white;
+    display: flex;
+    // padding: 0 .5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    &_wrapper {
+        display: flex;
+        height: 12%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: inherit;
+        &_brand {
+            color: $color_theme;
+            font-weight: bold;
+        }
+        &_nav {
+            display: flex;
+            &_nav {
+                display: flex;
+                flex-direction: row;
+                &_ul {
+                    display: inherit;
+                    flex-direction: row;
+                    list-style: none;
+                    &_li {
+                        padding: 0 1rem;
+                        & a {
+                            text-decoration: none;
+                            color: red;
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
+            }
+        }
+        &_utils {
+            display: inherit;
+            &_wrapper {
+                display: inherit;
+                &_search {
+                    width: 12rem;
+                    & form {
+                        width: inherit;
+                    }
+                    &_input {
+                        width: inherit;
+                        border-radius: 2rem;
+                        border: 1px solid;
+                        padding: 0.4rem 1rem;
+                        outline: none;
+                    }
+                }
+                &_sign_up {
+                    margin: 0 2rem;
+                    &_btn {
+                        border: none;
+                        background: unset;
+                        & svg {
+                            width: 2.1rem;
+                            height: 2.1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &_explorer {
+        display: flex;
+        flex-direction: row;
+        height: 90%;
+        width: inherit;
+        &_wrapper {
+            display: flex;
+            flex-direction: row;
+            width: inherit;
+            height: inherit;
+            &_leftpane {
+                width: 55%;
+                display: inherit;
+                flex-direction: column;
+                justify-content: space-around;
+                padding-left: 5rem;
+                &_heading {
+                    font-size: 4rem;
+                    // width: 6%;
+                }
+                &_p {
+                    font-size: 1.5rem;
+                }
+                &_btns {
+                    width: 100%;
+                    display: flex;
+                    column-gap: 3rem;
+                    & button {
+                        padding: 1rem 4rem;
+                    }
+                    &_now {
+                        background-color: $color_theme;
+                        color: $color-white;
+                        border: unset;
+                    }
+                    &_explore {
+                        background-color: unset;
+                        color: $color_theme;
+                        border: 1.2px solid $color_theme;
+                        display: flex;
+                        align-items: center;
+                        & svg {
+                            width: 2.5rem;
+                            height: 2rem;
+                            fill: currentColor;
+                            position: relative;
+                            left: 1.9rem;
+                        }
+                    }
+                }
+            }
+            &_rightpane {
+                width: 45%;
+                // background-image: url('../../assets/img/grocers.jpg');
+                background-size: 84%;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+    }
+}
