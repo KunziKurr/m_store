@@ -1,0 +1,81 @@
+.products {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    &_wrapper {
+        display: inherit;
+        &_container {
+            &_list {
+                &_ul {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    column-gap: 2rem;
+                    row-gap: 6rem;
+                    width: 100%;
+                    margin: 0 auto;
+                    justify-content: start;
+                    padding: 0rem 1.2rem;
+                    &_li {
+                        width: 17.5%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        row-gap: 0.8rem;
+                        text-align: center;
+                        box-shadow: 0px 3px 3px #85b64f;
+                        border-radius: 3rem;
+                        padding: 0rem 0rem 1.3rem 0rem;
+                        margin-top: 3rem;
+                        &_img {
+                            width: 13rem;
+                            height: 13rem;
+                            margin: 0 auto;
+                            border-radius: 50%;
+                            border: 8px solid $color_theme;
+                            margin-top: -6rem;
+                        }
+                        &_name {
+                            font-size: 1.3rem;
+                            text-transform: capitalize;
+                        }
+                        &_btns {
+                            width: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-around;
+                            & button {
+                                border: none;
+                                background-color: unset;
+                            }
+                        }
+                        &_price {
+                            border: 1px solid $color_theme !important;
+                            font-size: 1.4rem;
+                            font-weight: bold;
+                            color: #84b64f;
+                            padding: 0.3rem 1rem;
+                            border-radius: 15px;
+                        }
+                        &_buy {
+                            background-color: $color_theme !important;
+                            border-radius: 50%;
+                            color: $color_white !important;
+                            box-shadow: 0px 2px 4px #537232;
+                            height: 3rem;
+                            width: 3rem;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            & svg {
+                                fill: $color_white
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
