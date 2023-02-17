@@ -1,0 +1,97 @@
+.assorted_products {
+    margin: 5rem auto;
+    display: flex;
+    width: 100%;
+    &_wrapper {
+        display: inherit;
+        width: 100%;
+        &_container {
+            width: 100%;
+            display: inherit;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            &_heading {
+                font-size: 3rem;
+                text-transform: uppercase;
+                margin: 2rem auto;
+            }
+            &_ul {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                width: 87%;
+                place-content: center;
+                place-items: center;
+                list-style: none;
+                grid-row-gap: 7rem;
+                grid-column-gap: 3rem;
+                margin: 5rem 0;
+                &_li {
+                    width: 100%;
+                    text-align: center;
+                    box-shadow: 0px 3px 3px #85b64f;
+                    border-radius: 3rem;
+                    padding: 0rem 0rem 1.3rem 0rem;
+                    margin-top: 3rem;
+                    &_img {
+                        width: 69%;
+                        height: 18rem;
+                        margin: 0 auto;
+                        border-radius: 3rem;
+                        border: 8px solid $color_theme;
+                        margin-top: -6rem;
+                    }
+                    &_items {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr;
+                        width: 80%;
+                        place-content: center;
+                        margin: 0 auto;
+                        & span {
+                            font-size: 1.3rem;
+                        }
+                    }
+                    &_name {
+                        margin: 1rem 0;
+                        font-size: 1.4rem;
+                        text-transform: capitalize;
+                    }
+                    &_btns {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        margin: 1rem auto;
+                        margin-bottom: 0;
+                        & button {
+                            border: none;
+                            background-color: unset;
+                        }
+                        &_price {
+                            border: 1px solid $color_theme !important;
+                            font-size: 1.4rem;
+                            font-weight: bold;
+                            color: #84b64f;
+                            padding: 0.3rem 1rem;
+                            border-radius: 15px;
+                        }
+                        &_buy {
+                            background-color: $color_theme !important;
+                            border-radius: 50%;
+                            color: $color_white !important;
+                            box-shadow: 0px 2px 4px #537232;
+                            height: 3rem;
+                            width: 3rem;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            & svg {
+                                fill: $color_white
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

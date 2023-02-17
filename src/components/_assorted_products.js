@@ -1,5 +1,5 @@
 
-function Products() {
+function AssortedProducts() {
     const products_list = [
         {
             id: 'Ov',
@@ -78,46 +78,50 @@ function Products() {
 
 
     return (
-      <section className="products">
-            {/* Products */}
-            <div className="products_wrapper">
-                <div className="products_wrapper_container">
-                    <div className="products_wrapper_container_list">
-                        <ul className="products_wrapper_container_list_ul">
-                            {products_list.map((p_item, i) => {
+      <section className="assorted_products">
+            {/* assorted */}
+            <div className="assorted_products_wrapper">
+                <div className="assorted_products_wrapper_container">
+                    <h1 className="assorted_products_wrapper_container_heading">
+                        Assorted Groceries
+                    </h1>
+                    <ul className="assorted_products_wrapper_container_ul">
+                        {products_list.map((p_item, i) => {
+                        console.info(p_item.image)
                                  return (
-                                <li className="products_wrapper_container_list_ul_li" key={p_item.id}>
-                                         <div 
-                                         style={{
-                                            backgroundImage: `url(${p_item.image})`,
+                        <li className="assorted_products_wrapper_container_ul_li">
+                                         <div className="assorted_products_wrapper_container_ul_li_img" style={{
+                                             backgroundImage: `url(${p_item.image})`,
                                              backgroundSize: "cover",
                                             backgroundRepeat: "no-repeat",
                                             backgroundPosition: 'center',
-                                        }}
-                                             alt="" className="products_wrapper_container_list_ul_li_img" />
-                                    <p className="products_wrapper_container_list_ul_li_name">
-                                        {p_item.g_name}
-                                    </p>
-                                    <p className="products_wrapper_container_list_ul_li_desc">
-                                        {p_item.g_desc}
-                                    </p>
-                                    <div className="products_wrapper_container_list_ul_li_btns">
-                                        <button className="products_wrapper_container_list_ul_li_price">Ksh 3000.00</button>
-                                        <button className="products_wrapper_container_list_ul_li_buy">
-                                            <svg id="icon-basket" height="23" width="23" viewBox="0 0 24 24">
+                            }}></div>
+                            <p className="assorted_products_wrapper_container_ul_li_name">{p_item.g_name}</p>
+                            <div className="assorted_products_wrapper_container_ul_li_items">
+                                <span className="assorted_products_wrapper_container_ul_li_items_item">Item 1</span>
+                                <span className="assorted_products_wrapper_container_ul_li_items_item">Item 1</span>
+                                <span className="assorted_products_wrapper_container_ul_li_items_item">Item 1</span>
+                                <span className="assorted_products_wrapper_container_ul_li_items_item">Item 1</span>
+                                <span className="assorted_products_wrapper_container_ul_li_items_item">Item 1</span>
+                            </div>
+                            <div className="assorted_products_wrapper_container_ul_li_btns">
+                                <button className="assorted_products_wrapper_container_ul_li_btns_price">
+                                    {p_item.price}
+                                </button>
+                                <button className="assorted_products_wrapper_container_ul_li_btns_buy">
+                                <svg id="icon-basket" height="23" width="23" viewBox="0 0 24 24">
                                             <path d="M12 17.016q0.797 0 1.406-0.609t0.609-1.406-0.609-1.406-1.406-0.609-1.406 0.609-0.609 1.406 0.609 1.406 1.406 0.609zM9 9h6l-3-4.406zM17.203 9h4.781q0.422 0 0.727 0.281t0.305 0.703q-0.469 1.875-1.406 5.273t-1.172 4.289q-0.422 1.453-1.922 1.453h-13.031q-1.5 0-1.922-1.453l-2.531-9.281q-0.047-0.094-0.047-0.281 0-0.422 0.305-0.703t0.727-0.281h4.781l4.359-6.563q0.281-0.422 0.844-0.422 0.609 0 0.844 0.422z"></path>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </li>
-                            )})}
-                        </ul>
-                    </div>
+                                </svg>
+                                </button>
+                            </div>
+                                     </li>
+                    )})}
+                    </ul>
                 </div>
-            </div>
+           </div>
       </section>
     );
   }
   
-  export default Products;
+  export default AssortedProducts;
   
