@@ -65,7 +65,9 @@ function Header() {
                         </div>
                     </div>
                     <div className="header_explorer_wrapper_rightpane">
-
+                            <div className="header_explorer_wrapper_rightpane_container">
+                                
+                            </div>
                     </div>
             </div>
             </div>
