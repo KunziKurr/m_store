@@ -1,11 +1,11 @@
 .header {
     height: 92vh;
     width: 100vw;
-    background-color: $color-white;
     display: flex;
     // padding: 0 .5rem;
     flex-direction: column;
     justify-content: space-between;
+    background-image: linear-gradient(to bottom right, #f5f6fcee, #1e582d), url('../../assets/img/market.jpg');
     &_wrapper {
         display: flex;
         height: 12%;
