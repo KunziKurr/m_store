@@ -66,11 +66,31 @@ function Header() {
                     </div>
                     <div className="header_explorer_wrapper_rightpane">
                             <div className="header_explorer_wrapper_rightpane_container">
-                                
-                            </div>
+                    </div>
                     </div>
             </div>
             </div>
+            <svg id="svg" viewBox="0 0 1440 390" xmlns="http://www.w3.org/2000/svg" className="transition duration-300 ease-in-out delay-150" style={{
+                position: "absolute",
+                bottom: "4.9rem",
+                opacity: "0.5"
+            }}>
+        <defs>
+        <linearGradient id="gradient" x1="67%" y1="3%" x2="33%" y2="97%">
+            <stop offset="5%" stopColor="#00d084"></stop>
+            <stop offset="95%" stopColor="#8ED1FC"></stop>
+        </linearGradient>
+        </defs>
+        <path d="M 0,400 C 0,400 0,266 0,266 C 140.66666666666669,279.4666666666667 281.33333333333337,292.93333333333334 445,290 C 608.6666666666666,287.06666666666666 795.3333333333333,267.73333333333335 965,261 C 1134.6666666666667,254.26666666666662 1287.3333333333335,260.1333333333333 1440,266 C 1440,266 1440,400 1440,400 Z" stroke="none" strokeWidth="0" fill="url(#gradient)" fillOpacity="1" className="transition-all duration-300 ease-in-out delay-150 path-1"></path>
+        <defs>
+        <linearGradient id="gradient" x1="67%" y1="3%" x2="33%" y2="97%">
+            <stop offset="5%" stopColor="#00d084"></stop>
+            <stop offset="95%" stopColor="#8ED1FC"></stop>
+        </linearGradient>
+        </defs>
+        <path d="M 0,400 C 0,400 0,133 0,133 C 194,150.86666666666667 388,168.73333333333335 533,163 C 678,157.26666666666665 774,127.93333333333332 917,119 C 1060,110.06666666666668 1250,121.53333333333333 1440,133 C 1440,133 1440,400 1440,400 Z" stroke="none" strokeWidth="0" fill="url(#gradient)" fillOpacity="0.53" className="transition-all duration-300 ease-in-out delay-150 path-0"></path>
+
+</svg>
         </header>
 
             
